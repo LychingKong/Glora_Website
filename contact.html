@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | Glorá</title>
     <link rel="icon" type="image/png" href="images/glora_logo_trans.png" />
+    <!-- Scroll Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
@@ -230,7 +232,11 @@
           </section>
 
           <!-- Contact Form -->
-          <form class="grid grid-cols-1 gap-6 max-w-xl mx-auto">
+          <form
+            class="grid grid-cols-1 gap-6 max-w-xl mx-auto"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <input
               type="text"
               placeholder="Your Name"
@@ -260,7 +266,11 @@
           <!-- Contact Info + Socials -->
           <div class="space-y-4">
             <!-- Phone Number -->
-            <p class="text-neutral-700">
+            <p
+              class="text-neutral-700"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               📞 Phone:
               <span class="font-sans font-light tracking-widest"
                 >+855 97 426 5957</span
@@ -268,7 +278,11 @@
             </p>
 
             <!-- Social Icons -->
-            <div class="flex justify-center space-x-6 mt-4">
+            <div
+              class="flex justify-center space-x-6 mt-4"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <a
                 href="https://www.instagram.com/glora.cambodia?igsh=dzI1NGg2YmFvYW0y&utm_source=ig_contact_invite"
                 class="hover:opacity-70 transition cursor-pointer"
@@ -307,6 +321,7 @@
         </div>
       </section>
     </main>
+
     <footer class="bg-white border-t border-gray-200 text-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div
@@ -409,6 +424,7 @@
         </div>
       </div>
     </footer>
+
     <!-- Javascript -->
     <script>
       // Navbar
@@ -439,6 +455,11 @@
       mobileLinks.forEach((link) => {
         link.addEventListener("click", closeMenu);
       });
+    </script>
+    <!-- Scroll Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

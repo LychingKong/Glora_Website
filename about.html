@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us | Glorá</title>
     <link rel="icon" type="image/png" href="images/glora_logo_trans.png" />
+    <!-- Scroll Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
@@ -231,7 +233,11 @@
           class="max-w-4xl mx-auto space-y-14 relative border-l border-neutral-300 pl-8"
         >
           <!-- Step 1 -->
-          <div class="relative flex flex-col md:flex-row md:items-start gap-6">
+          <div
+            class="relative flex flex-col md:flex-row md:items-start gap-6"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <img
               src="images/about/step1.JPG"
               class="w-32 h-32 rounded-lg object-cover shadow-sm"
@@ -252,7 +258,11 @@
           </div>
 
           <!-- Step 2 -->
-          <div class="relative flex flex-col md:flex-row md:items-start gap-6">
+          <div
+            class="relative flex flex-col md:flex-row md:items-start gap-6"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <img
               src="images/about/step2.JPG"
               class="w-32 h-32 rounded-lg object-cover shadow-sm"
@@ -272,7 +282,11 @@
           </div>
 
           <!-- Step 3 -->
-          <div class="relative flex flex-col md:flex-row md:items-start gap-6">
+          <div
+            class="relative flex flex-col md:flex-row md:items-start gap-6"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <img
               src="images/about/step3.JPG"
               class="w-32 h-32 rounded-lg object-cover shadow-sm"
@@ -292,7 +306,11 @@
           </div>
 
           <!-- Step 4 -->
-          <div class="relative flex flex-col md:flex-row md:items-start gap-6">
+          <div
+            class="relative flex flex-col md:flex-row md:items-start gap-6"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <img
               src="images/about/step4.JPG"
               class="w-32 h-32 rounded-lg object-cover shadow-sm"
@@ -322,7 +340,7 @@
 
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12">
             <!-- Team Member 1 -->
-            <div class="space-y-3">
+            <div class="space-y-3" data-aos="fade-up" data-aos-duration="2000">
               <img
                 src="images/about/lyching.png"
                 class="w-32 h-32 mx-auto rounded-full object-cover shadow-sm"
@@ -338,7 +356,7 @@
             </div>
 
             <!-- Team Member 2 -->
-            <div class="space-y-3">
+            <div class="space-y-3" data-aos="fade-up" data-aos-duration="2000">
               <img
                 src="images/about/puthea.png"
                 class="w-32 h-32 mx-auto rounded-full object-cover shadow-sm"
@@ -354,7 +372,7 @@
             </div>
 
             <!-- Team Member 3 -->
-            <div class="space-y-3">
+            <div class="space-y-3" data-aos="fade-up" data-aos-duration="2000">
               <img
                 src="images/about/pisey.png"
                 class="w-32 h-32 mx-auto rounded-full object-cover shadow-sm"
@@ -370,7 +388,7 @@
             </div>
 
             <!-- Team Member 4 -->
-            <div class="space-y-3">
+            <div class="space-y-3" data-aos="fade-up" data-aos-duration="2000">
               <img
                 src="images/about/daravan.png"
                 class="w-32 h-32 mx-auto rounded-full object-cover shadow-sm"
@@ -386,7 +404,7 @@
             </div>
 
             <!-- Team Member 5 -->
-            <div class="space-y-3">
+            <div class="space-y-3" data-aos="fade-up" data-aos-duration="2000">
               <img
                 src="images/about/ginan.png"
                 class="w-32 h-32 mx-auto rounded-full object-cover shadow-sm"
@@ -534,6 +552,11 @@
       mobileLinks.forEach((link) => {
         link.addEventListener("click", closeMenu);
       });
+    </script>
+    <!-- Scroll Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
